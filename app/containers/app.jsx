@@ -8,7 +8,7 @@ class App extends React.Component {
       <div>
         <Navbar/>
         <div className="container" style={{paddingTop: '50px'}}>
-          <RouteHandler/>
+          {this.props.children}
         </div>
       </div>
     );

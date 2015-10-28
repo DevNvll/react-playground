@@ -8,8 +8,8 @@ class Navbar extends React.Component {
         <nav className="navbar navbar-inverse navbar-fixed-top">
           <div className="container">
             <ul className="nav navbar-nav">
-              <li><Link to="app">Home</Link></li>
-              <li><Link to="about">About</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
             </ul>
           </div>
         </nav>

@@ -3,6 +3,4 @@ import { render } from 'react-dom';
 import Router from 'react-router';
 import routes from './routes.jsx';
 
-Router.run(routes, function (Handler) {
-  React.render(<Handler/>, document.getElementById('root'));
-});
+render((routes), document.getElementById('root'));
