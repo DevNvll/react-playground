@@ -1,7 +1,7 @@
 import React from 'react';
 import App from './containers/app.jsx';
-import Home from './views/home.jsx';
-import About from './views/about.jsx';
+import Home from './containers/home.jsx';
+import About from './containers/about.jsx';
 import { IndexRoute, Router, Route, Link } from 'react-router';
 
 let routes = (
