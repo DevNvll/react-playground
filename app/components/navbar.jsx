@@ -1,21 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { Navbar, NavBrand, Nav, NavItem } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
-class Navbar extends React.Component {
+export default class navbarComp extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-inverse navbar-fixed-top">
-          <div className="container">
-            <ul className="nav navbar-nav">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-            </ul>
-          </div>
-        </nav>
+        <Navbar inverse fixedTop>
+          <LinkContainer to="/home"><NavBrand>Razr9</NavBrand></LinkContainer>
+          <Nav>
+            <LinkContainer to="/home"><NavItem>Home</NavItem></LinkContainer>
+            <LinkContainer to="/about"><NavItem>About</NavItem></LinkContainer>
+          </Nav>
+        </Navbar>
       </div>
       );
   }
 };
-
-export default Navbar;

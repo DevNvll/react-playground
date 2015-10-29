@@ -2,7 +2,7 @@ import React from 'react';
 import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
 import Navbar from '../components/navbar.jsx';
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <div>
@@ -14,5 +14,3 @@ class App extends React.Component {
     );
   }
 };
-
-export default App;
