@@ -10,6 +10,7 @@ module.exports = {
       { test: /\.html$/, loader: "html" },
       { test: /\.jsx?$/, exclude: /(node_modules|bower_components)/, loader: 'babel' },
       { test: /\.css$/, exclude: /\.useable\.css$/, loader: "style!css" },
+      { test: /\.scss$/, loaders: ["style", "css", "sass"] }
     ]
   }
 };
