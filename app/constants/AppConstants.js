@@ -1,4 +1,5 @@
 module.exports = {
-  ADD_ITEM: 'ADD_ITEM',
-  REMOVE_ITEM: 'REMOVE_ITEM'
+  TEST: 'TEST',
+  ADD_TODO: 'ADD_TODO',
+  DELETE_TODO: 'DELETE_TODO'
 };

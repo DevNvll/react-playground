@@ -6,6 +6,7 @@ export default class TargetsTable extends React.Component {
     super(props);
     this.state = {targets: []};
   }
+  
   componentWillMount() {
     this.targets = new Firebase('https://rektdivision.firebaseio.com/targets');
     var self = this;

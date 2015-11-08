@@ -1,11 +1,23 @@
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var AppConstants = require('../constants/AppConstants');
+import AppDispatcher from '../dispatcher/AppDispatcher';
+import AppConstants from '../constants/AppConstants';
 
 var AppActions = {
-  addItem: function(item){
+  testAction: function(item){
     AppDispatcher.handleViewAction({
-      actionType:AppConstants.ADD_ITEM,
+      actionType:AppConstants.TEST,
       item: item
+    });
+  },
+  addTodo: function(data) {
+    AppDispatcher.handleViewAction({
+      actionType:AppConstants.ADD_TODO,
+      data: data
+    });
+  },
+  deleteTodo: function(index) {
+    AppDispatcher.handleViewAction({
+      actionType:AppConstants.DELETE_TODO,
+      index: index
     });
   }
 };
