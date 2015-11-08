@@ -31,7 +31,7 @@ export default class Home extends React.Component {
   }
   _onChange() {
     this.setState({
-      msg: 'Action triggered!'
+      msg: 'Action triggered! Check console'
     });
   }
 };
